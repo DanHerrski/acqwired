@@ -17,8 +17,24 @@ body, html {height: 100%}
 .bgblur {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 0 20px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=text] input[type=email]{
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 </style>
 <body>
@@ -31,12 +47,21 @@ body, html {height: 100%}
     <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <p class="w3-large w3-center">Your proprietary M&A deal engine</p>
-    <p class="w3-large w3-center">Request an invitation</p>
+    <p class="w3-large w3-center"></p>
+    <form>
+      <label for="email">Request an invitation:</label>
+      <input type="email" id="email" name="email">
+      <input type="button" value="Submit" onclick="msg()">
+    </form>
   </div>
   <div class="w3-display-bottomleft w3-padding-large">
     Acqwired.ai
   </div>
 </div>
-
+<script>
+function msg() {
+  alert("Submission received! (test)");
+}
+</script>
 </body>
 </html>
