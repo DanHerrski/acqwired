@@ -30,8 +30,8 @@ input[type=button], input[type=submit], input[type=reset] {
   margin: 4px 2px;
   cursor: pointer;
 }
-input[type=text] input[type=email]{
-  width: 75%;
+input[type=text], input[type=email]{
+  width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -47,9 +47,9 @@ input[type=text] input[type=email]{
     <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <p class="w3-large w3-center">Your proprietary M&A deal engine</p>
-    <p class="w3-large w3-center"></p>
+    <p class="w3-large w3-center">Request an invitation:</p>
     <form>
-      <label for="email">Request an invitation:</label>
+      <label for="email">email:</label>
       <input type="email" id="email" name="email">
       <input type="button" value="Submit" onclick="msg()">
     </form>
