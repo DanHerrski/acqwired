@@ -14,14 +14,17 @@ body, html {height: 100%}
   background-position: center;
   background-size: cover;
 }
+.bgblur {
+    backdrop-filter: blur(5px);
+}
 </style>
 <body>
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge bgblur">
     <img src="Acqwire%20Logo%20v1%20-%20white%20(300x100)-02.png"/>
   </div>
-  <div class="w3-display-middle">
+  <div class="w3-display-middle bgblur">
     <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <p class="w3-large w3-center">Your proprietary M&A deal engine</p>
